@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 div { 
     margin: 50px auto;
 }
@@ -17,7 +21,7 @@ div {
     background-color: white;
     border: 5px solid beige;
     text-align: center;
-    width: 520px;
+    width: 525px;
   }
 
 .square {

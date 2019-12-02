@@ -1,4 +1,4 @@
-
+if (pl)
 
 for (let i = 0; i < 9; i++) {
     let square = document.querySelectorAll('.square')
@@ -6,12 +6,12 @@ for (let i = 0; i < 9; i++) {
         evt.preventDefault();
         if (document.querySelector('h2').innerHTML === "Player 1") {
         evt.target.style.backgroundColor = "blue"
-        evt.target.pointerEvents = "none"
+        evt.target.style.pointerEvents = "none"
         document.querySelector('h2').innerHTML = 'Player 2'
         } 
         else if (document.querySelector('h2').innerHTML === "Player 2") {
         evt.target.style.backgroundColor = "red"
-        evt.target.pointerEvents = "none"
+        evt.target.style.pointerEvents = "none"
         document.querySelector('h2').innerHTML = 'Player 1'
         }
     })
