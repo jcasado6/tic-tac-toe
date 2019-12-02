@@ -1,4 +1,13 @@
-if (pl)
+let nodeList = document.querySelectorAll('.square')
+let array = Array.from(nodeList)
+console.log(array)
+
+function winner() {
+    if ((array[0].innerHTML === array[1].innerHTML && array[1].innerHTML === array[2].innerHTML)
+    (array[3].innerHTML === array[4].innerHTML && array[4].innerHTML === array[5].innerHTML)) {
+    console.log('winner') }
+}
+
 
 for (let i = 0; i < 9; i++) {
     let square = document.querySelectorAll('.square')
@@ -6,12 +15,16 @@ for (let i = 0; i < 9; i++) {
         evt.preventDefault();
         if (document.querySelector('h2').innerHTML === "Player 1") {
         evt.target.style.backgroundColor = "blue"
+        evt.target.innerHTML = "x"
         evt.target.style.pointerEvents = "none"
+        winner()
         document.querySelector('h2').innerHTML = 'Player 2'
         } 
         else if (document.querySelector('h2').innerHTML === "Player 2") {
         evt.target.style.backgroundColor = "red"
+        evt.target.innerHTML = "o"
         evt.target.style.pointerEvents = "none"
+        winner()
         document.querySelector('h2').innerHTML = 'Player 1'
         }
     })
