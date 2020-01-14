@@ -1,38 +1,85 @@
 body {
-    background: crimson;
+  background: bisque;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
-}
-
-div { 
-    margin: 50px auto;
+  text-align: center;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 175px 175px 175px;
-    grid-template-rows: 175px 175px 175px;
-    background-color: white;
-    border: 5px solid beige;
-    text-align: center;
-    width: 525px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+  border: 5px solid black;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
 
-.square {
-    border: black 1px solid;
+#1a {
+  grid-row: 1;
+  grid-column: 1;
+}
+#1b {
+  grid-row: 1;
+  grid-column: 2;
+}
+#1c {
+  grid-row: 1;
+  grid-column: 3;
+}
+#2a {
+  grid-row: 2;
+  grid-column: 1;
+}
+#2b {
+  grid-row: 2;
+  grid-column: 2;
+}
+#2c {
+  grid-row: 2;
+  grid-column: 3;
+}
+#3a {
+  grid-row: 3;
+  grid-column: 1;
+}
+#3b {
+  grid-row: 3;
+  grid-column: 2;
+}
+#3c {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+/* #1a,
+#1b,
+#1c,
+#2a,
+#2b,
+#2c,
+#3a,
+#3b,
+#3c {
+  border: 5px, solid, black
+} */
+
+.box {
+    border: 5px, solid black;
 }
 
 .reset {
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
-    height: 55px;
-    width: 100px;
-    margin: 0 580px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid black;
+  margin: 15px auto;
+  display: block;
 }
+
